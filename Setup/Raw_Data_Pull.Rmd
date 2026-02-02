@@ -1,7 +1,7 @@
 ---
 title: "Score_Qualtrics_RawDataPull"
-author: "SJC"
-date: "20-Nov-2025"
+author: "dsnlab"
+date: "31-Jan-2026"
 output: html_document
 ---
 
@@ -238,6 +238,7 @@ DSR_W2_TAG2 <- filter(long_survey_data, grepl("Daily", survey_name)) %>%
 write.csv(DSR_W2_TAG2, file = paste0(workdir,"Qualtrics_Output/Wave2/DSR_Wave2_TAG2_wide.csv"))
 
 ```
+
 
 ```{r Return to Cleaning}
 rm(cleaned_survey_data2,cleaned_survey_data3,embedded_qs,misIDkey,missingID,sortbyqid_data,TAGEmbeddedHomeQ_Gathered,TAGHomeQ,test1,test2,i,gather_cols,IDs)
