@@ -82,3 +82,12 @@ timebetween=function(subid){
 
 #rm(time_between,graph_dates)
 ```
+
+Prep for Export
+```{r}
+redcap_cleaned_dates <- redcap_cleaned
+redcap_cleaned$sa_date <- as.character(redcap_cleaned$sa_date)
+redcap_cleaned$sb_date <- as.character(redcap_cleaned$sb_date)
+redcap_cleaned$sos_session_date <- as.character(redcap_cleaned$sos_session_date)
+redcap_cleaned$dob <- as.character(redcap_cleaned$dob)
+```
